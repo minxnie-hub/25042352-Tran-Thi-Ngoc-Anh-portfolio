@@ -6,6 +6,82 @@ import ScrollProgress from '@/components/ScrollProgress';
 import { projects } from '@/lib/projects';
 import { SITE, asset } from '@/lib/site';
 
+const learningGoals = [
+  {
+    title: 'Chinh phục ngôn ngữ',
+    text: 'Nâng cao trình độ tiếng Hàn và đạt chứng chỉ TOPIK theo đúng lộ trình đã hoạch định.',
+  },
+  {
+    title: 'Vững vàng chuyên môn',
+    text: 'Học tập và nắm vững các nền tảng kiến thức chuyên ngành, đồng thời tìm hiểu sâu sắc về văn hóa Hàn Quốc.',
+  },
+  {
+    title: 'Kỷ luật cá nhân',
+    text: 'Xây dựng và duy trì thói quen học tập chủ động, kỷ luật và đạt hiệu suất cao.',
+  },
+];
+
+const personalGoals = [
+  {
+    title: 'Hoàn thiện kỹ năng mềm',
+    text: 'Tích cực rèn luyện kỹ năng giao tiếp, làm việc nhóm, thuyết trình và quản lý thời gian hiệu quả.',
+  },
+  {
+    title: 'Làm chủ công nghệ',
+    text: 'Sử dụng thành thạo các công cụ số và nền tảng trí tuệ nhân tạo để tối ưu hóa việc học tập và công việc.',
+  },
+  {
+    title: 'Tư duy mở',
+    text: 'Không ngừng mở rộng hiểu biết, duy trì tư duy tích cực và chủ động hội nhập trong môi trường quốc tế.',
+  },
+];
+
+const portfolioGoals = [
+  {
+    title: 'Hệ thống hóa',
+    text: 'Là không gian lưu trữ và sắp xếp khoa học toàn bộ quá trình học tập, các dự án thực tế và thành tích cá nhân.',
+  },
+  {
+    title: 'Khẳng định năng lực',
+    text: 'Thể hiện rõ nét các kỹ năng số, năng lực chuyên môn và sự nỗ lực không ngừng của bản thân.',
+  },
+  {
+    title: 'Kết nối cơ hội',
+    text: 'Tạo ra một công cụ trực quan, tiện lợi để dễ dàng chia sẻ với giảng viên, nhà tuyển dụng hoặc các đối tác trong tương lai.',
+  },
+  {
+    title: 'Đánh giá tiến độ',
+    text: 'Dùng làm thước đo để theo dõi sự tiến bộ của chính mình và làm cơ sở vững chắc để phát triển đường dài.',
+  },
+];
+
+const skillsLearned = [
+  'Sử dụng thành thạo các công cụ số như Canva, Notion và Google Workspace để thiết kế và quản lý nội dung.',
+  'Biết cách xây dựng bố cục Portfolio logic, đồng thời nâng cao kỹ năng thiết kế và tư duy thẩm mỹ.',
+  'Rèn luyện kỹ năng tìm kiếm, chọn lọc và tổng hợp thông tin chuẩn xác.',
+  'Cải thiện đáng kể kỹ năng quản lý thời gian và lập kế hoạch khi thực hiện dự án.',
+];
+
+const proudPoints = [
+  'Tự hào hoàn thành một Portfolio khoa học, trực quan, phản ánh chân thực quá trình nỗ lực học tập của bản thân.',
+  'Tự tin làm chủ các công cụ số, qua đó rèn luyện được tính kiên trì và cẩn thận.',
+  'Tạo ra được một sản phẩm thực tế có thể tiếp tục cập nhật và sử dụng cho việc học tập, công việc sau này.',
+];
+
+const challenges = [
+  'Mất khá nhiều thời gian ban đầu để căn chỉnh, sắp xếp bố cục sao cho vừa khoa học vừa thẩm mỹ.',
+  'Phải tự tìm hiểu thêm nhiều kiến thức do chưa thành thạo một số công cụ thiết kế.',
+  'Cần chỉnh sửa nhiều lần để đảm bảo tính chính xác, thống nhất và chuyên nghiệp cho sản phẩm cuối cùng.',
+];
+
+function StarList({ items }) {
+  return (
+    <ul className="star-list">
+      {items.map((item) => <li key={item}>{item}</li>)}
+    </ul>
+  );
+}
+
 export default function Home() {
   return (
     <>
@@ -28,6 +104,7 @@ export default function Home() {
           <div className="home-hero__stars" aria-hidden="true">
             <i /><i /><i /><i /><i /><i /><i /><i />
           </div>
+
           <div className="home-hero__content shell">
             <div className="home-hero__copy">
               <p className="eyebrow"><span lang="ko">안녕하세요!</span> · Portfolio học tập 2026</p>
@@ -35,7 +112,7 @@ export default function Home() {
                 <span>Trần Thị</span>
                 <em>Ngọc Anh</em>
               </h1>
-              <p className="home-hero__lead">{SITE.tagline}</p>
+              <p className="home-hero__lead">Tôi ghi lại hành trình học tập bằng ngôn ngữ, công nghệ và một chút ánh sao.</p>
               <div className="home-hero__actions">
                 <a className="button button--light" href="#projects">Khám phá 6 bài tập</a>
                 <a className="text-link" href="#about">Đọc giới thiệu <span aria-hidden="true">↓</span></a>
@@ -56,6 +133,7 @@ export default function Home() {
               <span className="portrait-glint" aria-hidden="true" />
             </div>
           </div>
+
           <div className="home-hero__ticker" aria-label="Các chủ đề chính">
             <div>
               <span>Ngôn ngữ</span><i>✦</i><span>Văn hóa Hàn Quốc</span><i>✦</i><span>Công nghệ số</span><i>✦</i><span>AI có trách nhiệm</span><i>✦</i>
@@ -67,12 +145,17 @@ export default function Home() {
         <section className="about-section shell" id="about">
           <Reveal className="about-section__intro">
             <div>
-              <p className="section-kicker">01 · Giới thiệu</p>
-              <h2>Tôi lưu lại hành trình học tập bằng ngôn ngữ, công nghệ và tư duy phản biện.</h2>
+              <p className="section-kicker">Giới thiệu</p>
+              <h2>Ngôn ngữ là điểm bắt đầu, sáng tạo là cách tôi mở rộng góc nhìn.</h2>
             </div>
-            <p>
-              Tôi là Trần Thị Ngọc Anh, sinh viên Khoa Ngôn ngữ và Văn hóa Hàn Quốc, Trường Đại học Ngoại ngữ - ĐHQGHN. Portfolio này ghi lại cách tôi tiếp cận công nghệ số, nghiên cứu học thuật và trí tuệ nhân tạo trong quá trình học tập.
-            </p>
+            <div className="about-intro-copy">
+              <p>
+                Xin chào, tôi là Trần Thị Ngọc Anh. Hiện tại, tôi đang là sinh viên chuyên ngành Ngôn ngữ và Văn hóa Hàn Quốc tại Trường Đại học Ngoại ngữ, Đại học Quốc gia Hà Nội (ULIS).
+              </p>
+              <p>
+                Bên cạnh tình yêu dành cho ngôn ngữ, tôi là một người say mê sự sáng tạo và những góc nhìn đa chiều. Trong thời gian rảnh, tôi thường tìm niềm vui qua việc vẽ tranh và nghe nhạc.
+              </p>
+            </div>
           </Reveal>
 
           <div className="about-layout">
@@ -89,38 +172,60 @@ export default function Home() {
               </dl>
             </Reveal>
 
-            <Reveal className="about-narrative">
-              <span className="about-narrative__kicker">Góc nhìn cá nhân</span>
-              <h3>Ngôn ngữ là điểm bắt đầu. Công nghệ mở rộng cách tôi tìm hiểu, cộng tác và sáng tạo.</h3>
-              <p>
-                Qua sáu bài tập, tôi từng bước rèn luyện kỹ năng quản lý dữ liệu, tìm kiếm nguồn học thuật, thiết kế prompt, phối hợp nhóm và sử dụng AI có trách nhiệm.
-              </p>
-              <div className="focus-list">
-                <article>
-                  <span>01</span>
-                  <h4>Năng lực số</h4>
-                  <p>Tôi tổ chức tệp tin, tài liệu và quy trình học tập theo một hệ thống rõ ràng.</p>
-                </article>
-                <article>
-                  <span>02</span>
-                  <h4>Tư duy học thuật</h4>
-                  <p>Tôi tìm kiếm, đánh giá nguồn và trình bày thông tin theo cấu trúc mạch lạc.</p>
-                </article>
-                <article>
-                  <span>03</span>
-                  <h4>AI có trách nhiệm</h4>
-                  <p>Tôi sử dụng AI như một công cụ hỗ trợ, đồng thời giữ sự minh bạch và chủ động.</p>
-                </article>
+            <Reveal className="goals-panel">
+              <div className="goals-panel__header">
+                <span>Định hướng</span>
+                <h3>Mục tiêu học tập và phát triển bản thân</h3>
+              </div>
+              <div className="goal-columns">
+                <section>
+                  <h4>Mục tiêu học tập</h4>
+                  <div className="goal-list">
+                    {learningGoals.map((item) => (
+                      <article key={item.title}>
+                        <span aria-hidden="true">✦</span>
+                        <div><h5>{item.title}</h5><p>{item.text}</p></div>
+                      </article>
+                    ))}
+                  </div>
+                </section>
+                <section>
+                  <h4>Mục tiêu phát triển bản thân</h4>
+                  <div className="goal-list">
+                    {personalGoals.map((item) => (
+                      <article key={item.title}>
+                        <span aria-hidden="true">✦</span>
+                        <div><h5>{item.title}</h5><p>{item.text}</p></div>
+                      </article>
+                    ))}
+                  </div>
+                </section>
               </div>
             </Reveal>
           </div>
+
+          <Reveal className="portfolio-purpose">
+            <div className="portfolio-purpose__heading">
+              <span>Mục tiêu của Portfolio</span>
+              <h3>Một không gian để hệ thống hóa quá trình học tập và kết nối những cơ hội trong tương lai.</h3>
+            </div>
+            <div className="portfolio-purpose__grid">
+              {portfolioGoals.map((item, index) => (
+                <article key={item.title}>
+                  <span>{String(index + 1).padStart(2, '0')}</span>
+                  <h4>{item.title}</h4>
+                  <p>{item.text}</p>
+                </article>
+              ))}
+            </div>
+          </Reveal>
         </section>
 
         <section className="projects-section" id="projects">
           <div className="shell">
             <Reveal className="projects-section__heading">
               <div>
-                <p className="section-kicker">02 · Dự án học tập</p>
+                <p className="section-kicker">Bài tập</p>
                 <h2>06 bài tập đã hoàn thành</h2>
               </div>
               <p>Mỗi bài có một bìa riêng theo cùng hệ thống thị giác; trang chi tiết giữ đúng trình tự nội dung và đặt minh chứng ngay sau phần liên quan.</p>
@@ -142,16 +247,31 @@ export default function Home() {
             <span className="reflection-shard reflection-shard--two" />
           </div>
           <div className="reflection-section__inner shell">
-            <Reveal className="reflection-section__copy">
-              <p className="section-kicker">03 · Tổng kết</p>
-              <h2>Tôi đã đi từ thao tác kỹ thuật đến tư duy sử dụng AI có trách nhiệm.</h2>
-              <p>
-                Sáu bài tập tạo thành một hành trình liền mạch của tôi: bắt đầu từ quản lý tệp, tiếp tục với tìm kiếm học thuật, thiết kế prompt, phối hợp nhóm, sáng tạo cùng AI và kết thúc bằng việc xác lập những nguyên tắc đạo đức cá nhân.
-              </p>
-              <div className="reflection-points">
-                <article><span>01</span><h3>Chủ động</h3><p>Tôi tự tổ chức tài liệu, tiến độ và quy trình học tập.</p></article>
-                <article><span>02</span><h3>Kiểm chứng</h3><p>Tôi không sử dụng thông tin khi chưa đánh giá nguồn và đối chiếu.</p></article>
-                <article><span>03</span><h3>Minh bạch</h3><p>Tôi ghi nhận rõ vai trò của AI và phần đóng góp của bản thân.</p></article>
+            <Reveal className="reflection-summary">
+              <p className="section-kicker">Tổng kết</p>
+              <div className="reflection-summary__lead">
+                <h2>Nhìn lại quá trình học tập qua một sản phẩm trực quan và có hệ thống.</h2>
+                <div className="reflection-lead__copy">
+                  <span>Trải nghiệm và cảm nhận cá nhân</span>
+                  <p>
+                    Quá trình xây dựng Portfolio giúp tôi nhìn lại toàn bộ kiến thức và kỹ năng đã tích lũy từ môn học. Dù ban đầu gặp khó khăn trong việc sắp xếp bố cục nội dung, nhưng nhờ chủ động thực hành, tôi đã hoàn thiện một sản phẩm trực quan và dễ theo dõi. Đây là cơ hội tuyệt vời để tôi rèn luyện tính cẩn thận, sự sáng tạo và khả năng tự học.
+                  </p>
+                </div>
+              </div>
+
+              <div className="reflection-summary__grid">
+                <article className="reflection-card reflection-card--skills">
+                  <span className="reflection-card__label">Những kiến thức và kỹ năng đã học được</span>
+                  <StarList items={skillsLearned} />
+                </article>
+                <article className="reflection-card">
+                  <span className="reflection-card__label">Những điểm tâm đắc</span>
+                  <StarList items={proudPoints} />
+                </article>
+                <article className="reflection-card">
+                  <span className="reflection-card__label">Những thách thức đã gặp</span>
+                  <StarList items={challenges} />
+                </article>
               </div>
             </Reveal>
           </div>

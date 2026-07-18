@@ -2,7 +2,7 @@ import './globals.css';
 import { SITE } from '@/lib/site';
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000').replace(/\/$/, '');
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
@@ -17,9 +17,15 @@ export const metadata = {
   openGraph: {
     title: `${SITE.name} · Portfolio NMCNS & AI`,
     description: SITE.tagline,
-    images: [`${basePath}/brand/og-cover.svg`],
+    images: [`${siteUrl}/brand/og-cover.svg`],
     locale: 'vi_VN',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${SITE.name} · Portfolio NMCNS & AI`,
+    description: SITE.tagline,
+    images: [`${siteUrl}/brand/og-cover.svg`],
   },
 };
 
