@@ -6,6 +6,7 @@ import ProjectContent from '@/components/ProjectContent';
 import ScrollProgress from '@/components/ScrollProgress';
 import { projects, getProject } from '@/lib/projects';
 import { asset } from '@/lib/site';
+import ProjectCover from '@/components/ProjectCover';
 
 export function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
@@ -40,7 +41,7 @@ export default async function ProjectPage({ params }) {
               <Link className="back-link" href="/#projects">← Quay lại danh sách</Link>
               <div className="detail-hero__meta">
                 <span>Bài tập {project.number}</span>
-                <span lang="ko">{project.korean}</span>
+                <span>{project.tags[0]}</span>
               </div>
               <h1>{project.title}</h1>
               <p>{project.intro}</p>
@@ -50,8 +51,7 @@ export default async function ProjectPage({ params }) {
               <a className="button button--dark" href={asset(project.document)} target="_blank" rel="noreferrer">Mở file gốc PDF ↗</a>
             </div>
             <figure className="detail-hero__media">
-              <img src={asset(project.cover)} alt={project.coverAlt} />
-              <figcaption><span>{project.number}</span>{project.shortTitle}</figcaption>
+              <ProjectCover project={project} variant="detail" />
             </figure>
           </div>
         </div>

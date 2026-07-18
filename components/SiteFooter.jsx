@@ -6,7 +6,7 @@ export default function SiteFooter() {
     <footer className="site-footer" id="contact">
       <div className="site-footer__top">
         <Logo compact />
-        <p>감사합니다 · Cảm ơn bạn đã ghé xem hành trình học tập của Ngọc Anh.</p>
+        <p>감사합니다 · Cảm ơn bạn đã ghé xem portfolio của tôi.</p>
       </div>
       <div className="site-footer__contact">
         <a href={`mailto:${SITE.email}`}>{SITE.email}</a>

@@ -30,7 +30,7 @@ export default function Home() {
           </div>
           <div className="home-hero__content shell">
             <div className="home-hero__copy">
-              <p className="eyebrow"><span>Portfolio 2026</span> · NMCNS &amp; AI</p>
+              <p className="eyebrow"><span lang="ko">안녕하세요!</span> · Portfolio học tập 2026</p>
               <h1 aria-label="Trần Thị Ngọc Anh">
                 <span>Trần Thị</span>
                 <em>Ngọc Anh</em>
@@ -48,7 +48,7 @@ export default function Home() {
                 <img src={asset('/assets/profile/ngoc-anh.webp')} alt="Trần Thị Ngọc Anh trong trang phục Hanbok" />
               </figure>
               <div className="hero-note hero-note--one">25042352</div>
-              <div className="hero-note hero-note--two" lang="ko">별빛 기록</div>
+              <div className="hero-note hero-note--two">NMCNS &amp; AI</div>
               <div className="hero-profile-line">
                 <span>Sinh viên Khoa Ngôn ngữ và Văn hóa Hàn Quốc</span>
                 <small>ULIS · ĐHQGHN</small>
@@ -68,21 +68,21 @@ export default function Home() {
           <Reveal className="about-section__intro">
             <div>
               <p className="section-kicker">01 · Giới thiệu</p>
-              <h2>Một hành trình học tập được kể bằng ngôn ngữ, công nghệ và ánh sao.</h2>
+              <h2>Tôi lưu lại hành trình học tập bằng ngôn ngữ, công nghệ và tư duy phản biện.</h2>
             </div>
             <p>
-              Ngọc Anh là sinh viên Khoa Ngôn ngữ và Văn hóa Hàn Quốc, Trường Đại học Ngoại ngữ - ĐHQGHN. Portfolio ghi lại quá trình tiếp cận công nghệ số, nghiên cứu học thuật và AI dưới góc nhìn của một người học ngoại ngữ.
+              Tôi là Trần Thị Ngọc Anh, sinh viên Khoa Ngôn ngữ và Văn hóa Hàn Quốc, Trường Đại học Ngoại ngữ - ĐHQGHN. Portfolio này ghi lại cách tôi tiếp cận công nghệ số, nghiên cứu học thuật và trí tuệ nhân tạo trong quá trình học tập.
             </p>
           </Reveal>
 
           <div className="about-layout">
             <Reveal className="profile-sheet">
               <div className="about-card__label">Thông tin sinh viên</div>
-              <p className="profile-sheet__intro">Hồ sơ cá nhân và thông tin học tập của Trần Thị Ngọc Anh.</p>
+              <p className="profile-sheet__intro">Thông tin cá nhân và lớp học phần của tôi.</p>
               <dl>
                 <div><dt>Họ tên</dt><dd>{SITE.name}</dd></div>
                 <div><dt>MSSV</dt><dd>{SITE.studentId}</dd></div>
-                <div><dt>Ngày sinh</dt><dd>{SITE.birthday}</dd></div>
+                <div><dt>Lớp học phần</dt><dd>{SITE.courseCode}</dd></div>
                 <div><dt>Khoa</dt><dd>{SITE.faculty}</dd></div>
                 <div><dt>Trường</dt><dd>{SITE.university}</dd></div>
                 <div><dt>Email</dt><dd><a href={`mailto:${SITE.email}`}>{SITE.email}</a></dd></div>
@@ -90,26 +90,26 @@ export default function Home() {
             </Reveal>
 
             <Reveal className="about-narrative">
-              <span className="about-narrative__korean" lang="ko">배움의 기록</span>
-              <h3>Ngôn ngữ là điểm bắt đầu. Công nghệ mở rộng cách mình tìm hiểu, cộng tác và sáng tạo.</h3>
+              <span className="about-narrative__kicker">Góc nhìn cá nhân</span>
+              <h3>Ngôn ngữ là điểm bắt đầu. Công nghệ mở rộng cách tôi tìm hiểu, cộng tác và sáng tạo.</h3>
               <p>
-                Sáu bài tập cho thấy một tiến trình rõ ràng: từ thao tác với dữ liệu, tìm kiếm nguồn học thuật, thiết kế prompt đến phối hợp nhóm và sử dụng AI có trách nhiệm.
+                Qua sáu bài tập, tôi từng bước rèn luyện kỹ năng quản lý dữ liệu, tìm kiếm nguồn học thuật, thiết kế prompt, phối hợp nhóm và sử dụng AI có trách nhiệm.
               </p>
               <div className="focus-list">
                 <article>
                   <span>01</span>
                   <h4>Năng lực số</h4>
-                  <p>Tổ chức tệp tin, tài liệu và quy trình học tập một cách có hệ thống.</p>
+                  <p>Tôi tổ chức tệp tin, tài liệu và quy trình học tập theo một hệ thống rõ ràng.</p>
                 </article>
                 <article>
                   <span>02</span>
                   <h4>Tư duy học thuật</h4>
-                  <p>Tìm kiếm, đánh giá nguồn và trình bày thông tin theo cấu trúc rõ ràng.</p>
+                  <p>Tôi tìm kiếm, đánh giá nguồn và trình bày thông tin theo cấu trúc mạch lạc.</p>
                 </article>
                 <article>
                   <span>03</span>
                   <h4>AI có trách nhiệm</h4>
-                  <p>Khai thác AI như công cụ hỗ trợ, đồng thời giữ tính minh bạch và chủ động.</p>
+                  <p>Tôi sử dụng AI như một công cụ hỗ trợ, đồng thời giữ sự minh bạch và chủ động.</p>
                 </article>
               </div>
             </Reveal>
@@ -123,7 +123,7 @@ export default function Home() {
                 <p className="section-kicker">02 · Dự án học tập</p>
                 <h2>06 bài tập đã hoàn thành</h2>
               </div>
-              <p>Mỗi thumbnail sử dụng trang bài làm thực tế; trang chi tiết giữ đúng trình tự nội dung và đặt minh chứng ngay sau phần liên quan.</p>
+              <p>Mỗi bài có một bìa riêng theo cùng hệ thống thị giác; trang chi tiết giữ đúng trình tự nội dung và đặt minh chứng ngay sau phần liên quan.</p>
             </Reveal>
             <div className="projects-grid">
               {projects.map((project, index) => (
@@ -144,14 +144,14 @@ export default function Home() {
           <div className="reflection-section__inner shell">
             <Reveal className="reflection-section__copy">
               <p className="section-kicker">03 · Tổng kết</p>
-              <h2>Từ thao tác kỹ thuật đến tư duy sử dụng AI có trách nhiệm.</h2>
+              <h2>Tôi đã đi từ thao tác kỹ thuật đến tư duy sử dụng AI có trách nhiệm.</h2>
               <p>
-                Sáu bài tập tạo thành một hành trình liền mạch: bắt đầu từ quản lý tệp, tiến tới tìm kiếm nguồn học thuật, thiết kế prompt, phối hợp nhóm, sáng tạo với AI và cuối cùng là xác lập ranh giới đạo đức.
+                Sáu bài tập tạo thành một hành trình liền mạch của tôi: bắt đầu từ quản lý tệp, tiếp tục với tìm kiếm học thuật, thiết kế prompt, phối hợp nhóm, sáng tạo cùng AI và kết thúc bằng việc xác lập những nguyên tắc đạo đức cá nhân.
               </p>
               <div className="reflection-points">
-                <article><span>01</span><h3>Chủ động</h3><p>Tự tổ chức tài liệu, tiến độ và quy trình học tập.</p></article>
-                <article><span>02</span><h3>Kiểm chứng</h3><p>Không dùng thông tin nếu chưa đánh giá nguồn và đối chiếu.</p></article>
-                <article><span>03</span><h3>Minh bạch</h3><p>Ghi nhận rõ vai trò của AI và phần đóng góp cá nhân.</p></article>
+                <article><span>01</span><h3>Chủ động</h3><p>Tôi tự tổ chức tài liệu, tiến độ và quy trình học tập.</p></article>
+                <article><span>02</span><h3>Kiểm chứng</h3><p>Tôi không sử dụng thông tin khi chưa đánh giá nguồn và đối chiếu.</p></article>
+                <article><span>03</span><h3>Minh bạch</h3><p>Tôi ghi nhận rõ vai trò của AI và phần đóng góp của bản thân.</p></article>
               </div>
             </Reveal>
           </div>
