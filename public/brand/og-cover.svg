@@ -25,8 +25,8 @@
     <circle cx="78" cy="64" r="2"/><circle cx="174" cy="118" r="1.5"/><circle cx="318" cy="72" r="1.8"/><circle cx="556" cy="112" r="1.4"/><circle cx="704" cy="66" r="1.7"/><circle cx="1110" cy="548" r="1.8"/><circle cx="761" cy="522" r="1.4"/>
   </g>
   <text x="86" y="165" fill="#CBE2FF" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="4">PORTFOLIO 2026 · NMCNS &amp; AI</text>
-  <text x="80" y="314" fill="#FFF9EF" font-family="Georgia, serif" font-size="92">Trần Thị</text>
-  <text x="166" y="432" fill="url(#prism)" font-family="Georgia, serif" font-style="italic" font-size="126">Ngọc Anh</text>
+  <text x="80" y="314" fill="#FFF9EF" font-family="Times New Roman, Times, serif" font-size="92">Trần Thị</text>
+  <text x="166" y="432" fill="url(#prism)" font-family="Times New Roman, Times, serif" font-style="italic" font-size="126">Ngọc Anh</text>
   <rect x="164" y="388" width="480" height="2" rx="1" fill="url(#prism)" opacity=".75"/>
   <text x="86" y="520" fill="#C2CFE7" font-family="Arial, sans-serif" font-size="24">Ngôn ngữ · Công nghệ · AI có trách nhiệm</text>
 </svg>

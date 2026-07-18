@@ -1,14 +1,5 @@
 import './globals.css';
 import { SITE } from '@/lib/site';
-import localFont from 'next/font/local';
-
-const epilogue = localFont({
-  src: '../public/fonts/Epilogue-VariableFont_wght.ttf',
-  variable: '--font-epilogue',
-  display: 'swap',
-  weight: '100 900',
-});
-
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
@@ -34,7 +25,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="vi" className={epilogue.variable}>
+    <html lang="vi">
       <body>{children}</body>
     </html>
   );

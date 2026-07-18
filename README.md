@@ -7,7 +7,7 @@ Portfolio học tập của **Trần Thị Ngọc Anh — MSSV 25042352 — Lớ
 - Concept: **Ethereal Luminescence + Glassmorphism**.
 - Màu chủ đạo: Midnight Blue, Royal Blue, Sky, Porcelain và glow holographic nhẹ.
 - Bìa Bài 1–6 được dựng riêng bằng HTML/CSS theo cùng hệ thống Ethereal, không còn sử dụng ảnh chụp trang PDF.
-- Font nội dung dùng Epilogue được đóng gói qua `next/font/local`; tiêu đề dùng serif hệ thống hỗ trợ đầy đủ dấu tiếng Việt.
+- Font nội dung dùng Segoe UI/Arial; tiêu đề dùng Times New Roman để hiển thị ổn định đầy đủ dấu tiếng Việt trên Windows, Chrome và GitHub Pages.
 
 ## Chạy local
 
