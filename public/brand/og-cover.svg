@@ -1,9 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#081F5C"/><stop offset=".6" stop-color="#334EAC"/><stop offset="1" stop-color="#BAD6EB"/></linearGradient></defs>
-  <rect width="1200" height="630" fill="url(#g)"/>
-  <circle cx="980" cy="130" r="220" fill="#D0E3FF" opacity=".18"/>
-  <circle cx="1040" cy="520" r="280" fill="#F7F2EB" opacity=".12"/>
-  <g fill="#F7F2EB"><path d="M100 100c2 17 8 23 25 25-17 2-23 8-25 25-2-17-8-23-25-25 17-2 23-8 25-25Z"/><path d="M1060 240c2 12 6 16 18 18-12 2-16 6-18 18-2-12-6-16-18-18 12-2 16-6 18-18Z"/></g>
-  <text x="90" y="300" fill="#F7F2EB" font-family="Georgia, serif" font-size="92">Trần Thị Ngọc Anh</text>
-  <text x="96" y="380" fill="#D0E3FF" font-family="Arial, sans-serif" font-size="34" letter-spacing="5">PORTFOLIO · NMCNS &amp; AI · 25042352</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title">
+  <title id="title">Trần Thị Ngọc Anh — Portfolio 2026</title>
+  <defs>
+    <radialGradient id="bg" cx="75%" cy="18%" r="95%">
+      <stop offset="0" stop-color="#2448BD"/>
+      <stop offset=".48" stop-color="#071A55"/>
+      <stop offset="1" stop-color="#030B2D"/>
+    </radialGradient>
+    <radialGradient id="orb" cx="28%" cy="22%" r="78%">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".56"/>
+      <stop offset=".18" stop-color="#DDEEFF" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#7DA5EE" stop-opacity=".03"/>
+    </radialGradient>
+    <linearGradient id="prism" x1="0" x2="1">
+      <stop offset="0" stop-color="#A7F2FF"/><stop offset=".42" stop-color="#D8C8FF"/><stop offset=".7" stop-color="#FFD4E6"/><stop offset="1" stop-color="#FFF1B8"/>
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="26"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1060" cy="80" r="210" fill="#7DA5EE" opacity=".18" filter="url(#blur)"/>
+  <circle cx="945" cy="310" r="190" fill="url(#orb)" stroke="#DDEEFF" stroke-opacity=".28"/>
+  <ellipse cx="945" cy="310" rx="260" ry="92" fill="none" stroke="#CBE5FF" stroke-opacity=".3" transform="rotate(-18 945 310)"/>
+  <path d="M945 185c8 49 27 68 76 76-49 8-68 27-76 76-8-49-27-68-76-76 49-8 68-27 76-76Z" fill="url(#prism)" opacity=".9"/>
+  <g fill="#F7FBFF" opacity=".66">
+    <circle cx="78" cy="64" r="2"/><circle cx="174" cy="118" r="1.5"/><circle cx="318" cy="72" r="1.8"/><circle cx="556" cy="112" r="1.4"/><circle cx="704" cy="66" r="1.7"/><circle cx="1110" cy="548" r="1.8"/><circle cx="761" cy="522" r="1.4"/>
+  </g>
+  <text x="86" y="165" fill="#CBE2FF" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="4">PORTFOLIO 2026 · NMCNS &amp; AI</text>
+  <text x="80" y="314" fill="#FFF9EF" font-family="Georgia, serif" font-size="92">Trần Thị</text>
+  <text x="166" y="432" fill="url(#prism)" font-family="Georgia, serif" font-style="italic" font-size="126">Ngọc Anh</text>
+  <rect x="164" y="388" width="480" height="2" rx="1" fill="url(#prism)" opacity=".75"/>
+  <text x="86" y="520" fill="#C2CFE7" font-family="Arial, sans-serif" font-size="24">Ngôn ngữ · Công nghệ · AI có trách nhiệm</text>
 </svg>

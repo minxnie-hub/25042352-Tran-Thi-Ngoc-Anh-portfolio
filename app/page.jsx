@@ -10,19 +10,28 @@ export default function Home() {
   return (
     <>
       <ScrollProgress />
-      <main id="top">
+      <main id="top" className="ethereal-page">
         <section className="home-hero">
           <SiteHeader />
-          <div className="home-hero__texture" aria-hidden="true">
-            <img src={asset('/assets/mood/ocean-stars.webp')} alt="" />
+          <div className="ethereal-backdrop" aria-hidden="true">
+            <span className="aurora aurora--one" />
+            <span className="aurora aurora--two" />
+            <span className="glass-orb glass-orb--one" />
+            <span className="glass-orb glass-orb--two" />
+            <span className="glass-orb glass-orb--three" />
+            <span className="crystal crystal--one" />
+            <span className="crystal crystal--two" />
+            <span className="crystal crystal--three" />
+            <span className="prism-flare prism-flare--one" />
+            <span className="prism-flare prism-flare--two" />
           </div>
           <div className="home-hero__stars" aria-hidden="true">
-            <i /><i /><i /><i /><i />
+            <i /><i /><i /><i /><i /><i /><i /><i />
           </div>
           <div className="home-hero__content shell">
             <div className="home-hero__copy">
               <p className="eyebrow"><span>Portfolio 2026</span> · NMCNS &amp; AI</p>
-              <h1>
+              <h1 aria-label="Trần Thị Ngọc Anh">
                 <span>Trần Thị</span>
                 <em>Ngọc Anh</em>
               </h1>
@@ -44,6 +53,7 @@ export default function Home() {
                 <span>Sinh viên Khoa Ngôn ngữ và Văn hóa Hàn Quốc</span>
                 <small>ULIS · ĐHQGHN</small>
               </div>
+              <span className="portrait-glint" aria-hidden="true" />
             </div>
           </div>
           <div className="home-hero__ticker" aria-label="Các chủ đề chính">
@@ -127,7 +137,9 @@ export default function Home() {
 
         <section className="reflection-section" id="reflection">
           <div className="reflection-section__texture" aria-hidden="true">
-            <img src={asset('/assets/mood/polar-star.webp')} alt="" />
+            <span className="reflection-orb" />
+            <span className="reflection-shard reflection-shard--one" />
+            <span className="reflection-shard reflection-shard--two" />
           </div>
           <div className="reflection-section__inner shell">
             <Reveal className="reflection-section__copy">
