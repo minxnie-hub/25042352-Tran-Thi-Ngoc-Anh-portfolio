@@ -2038,3 +2038,98 @@ select {
   line-height: 1.8;
   text-wrap: pretty;
 }
+
+/* QA correction pass — feedback in "Thông tin cá nhân.pdf" */
+html {
+  scroll-padding-top: 5.5rem;
+}
+
+#contact {
+  scroll-margin-top: 1rem;
+}
+
+/* Hidden list counters previously left a 54px grid column, forcing every word
+   in Bài 2 and Bài 6 onto a separate line. Use one full-width text column. */
+.detail-content {
+  min-width: 0;
+}
+
+.feature-list li {
+  display: block;
+  min-width: 0;
+  padding: 1.2rem 1.35rem 1.2rem 3.4rem;
+}
+
+.feature-list p {
+  min-width: 0;
+  margin: 0;
+  line-height: 1.7;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+  text-wrap: pretty;
+}
+
+/* Compact, readable contact block with explicit visual affordances. */
+.site-footer__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .65rem;
+  padding: 1.55rem 0 1.8rem;
+}
+
+.site-footer__contact a {
+  display: inline-flex;
+  align-items: center;
+  gap: .7rem;
+  width: fit-content;
+  font-family: var(--font-sans) !important;
+  font-size: clamp(.88rem, 1vw, 1rem) !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+  letter-spacing: 0 !important;
+  text-shadow: none !important;
+}
+
+.site-footer__contact svg {
+  width: 1.05rem;
+  height: 1.05rem;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: .78;
+}
+
+/* Preserve Vietnamese descenders and diacritics in large display type. */
+.home-hero h1,
+.home-hero h1 span,
+.home-hero h1 em {
+  overflow: visible;
+}
+
+.home-hero h1 {
+  padding-bottom: .28em;
+}
+
+.home-hero h1 em {
+  padding-bottom: .24em;
+  line-height: 1.16;
+}
+
+@media (max-width: 580px) {
+  .feature-list li {
+    padding: 1.05rem 1rem 1.05rem 3rem;
+  }
+
+  .feature-list li::before {
+    left: 1.15rem;
+  }
+
+  .site-footer__contact a {
+    font-size: .88rem !important;
+  }
+}

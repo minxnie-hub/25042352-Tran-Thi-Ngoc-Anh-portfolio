@@ -49,7 +49,7 @@ export default function ProjectContent({ sections }) {
           {section.type === 'galleryGroup' && (
             <div className="gallery-group">
               <p className="gallery-group__intro">{section.description}</p>
-              <LightboxGallery images={section.images} captions={section.captions} />
+              <LightboxGallery images={section.images} captions={section.captions} variant={section.images.length === 1 ? 'single' : 'grid'} />
             </div>
           )}
 
